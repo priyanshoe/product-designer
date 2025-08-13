@@ -16,13 +16,13 @@ export default function Landing(){
                 <span className="text-xs md:text-[2.1vw] lg:text-[1.5vw] 2xl:text-[1vw] text-end">Work from sep '24</span>
             </div>
 
-            <div className="links flex gap-16 lg:gap-48 2xl:justify-between items-start">
+            <div className="links flex gap-10 justify-between items-start">
             {
                 ['Previously worked at code and theroy',"Protopie Ambassador"]
                 .map((props)=>(
                     <Link 
                     href={'/'} key={props.length} 
-                    className="text-xs md:text-[2.1vw] lg:text-[1.5vw] 2xl:text-[.7vw] flex pb-2 ">
+                    className="w-70 text-xs md:text-[2.1vw] lg:text-[1.5vw] 2xl:text-[.7vw] flex gap-3 pb-2 ">
 
                         <h3>{props}</h3>
                         <ArrowUpRight />
@@ -31,7 +31,7 @@ export default function Landing(){
                 ))
 
             }
-                <div className="flex gap-2 justify-end w-1/2 lg:w-1/4">
+                <div className="hidden md:flex gap-2 justify-end  lg:w-1/4">
                       <CircleArrowUp className="rotate-180" size={30} />
                         <CircleArrowUp className="rotate-180" size={30} />
                 </div>
