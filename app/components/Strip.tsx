@@ -1,3 +1,6 @@
+'use client';
+import gsap from "gsap";
+import { useEffect, useRef } from "react";
 
 const ImageData = [
     { id: 1, name: 'AVIS', imgSrc: '/SVG/AVIS.svg' },
@@ -16,21 +19,55 @@ const ImageData = [
     { id: 14, name: 'Zappos', imgSrc: '/SVG/Zappos.svg' },
 ];
 
+
+
+
 export default function Strip() {
+    
+    const stripe1 = useRef(null)
+    const stripe2 = useRef(null)
+    useEffect(() =>{
+        animation()
+
+    },[])
+
+    const animation = () => {
+
+        gsap.to(stripe1.current, {
+            x:'-100%',
+            duration: 18,
+            repeat: -1,
+            ease: 'linear',
+        })
+        gsap.to(stripe2.current, {
+            x:'-100%',
+            duration: 18,
+            repeat: -1,
+            ease: 'linear',
+        })
+    }
     return (
-        <div className=" border-[#9c9c9c] w-screen overflow-x-scroll border-y-1 ">
-                <div className="flex item-center justify-between marquee w-[1200vw] flex-nowrap  py-8 ">
-                    {
-                        ImageData.map((item) => (
-                            <img key={item.id} src={item.imgSrc} alt={item.name} />
-                        ))
-                    }
-                    {
-                        ImageData.map((item) => (
-                            <img key={item.id} src={item.imgSrc} alt={item.name} />
-                        ))
-                    }
+        <div className="stripe_container absolute top-0 left-0 border-[#9c9c9c] border-y-1 ">
+            <div className="stripe_slider relative flex whitespace-nowrap py-8 md:py-4 lg:py-2 ">
+                <div ref={stripe1} className="flex gap-28 md:gap-54 ">
+                    {ImageData.map((item) => (
+                        <div key={item.id} className="flex items-center justify-center w-[10vw] h-[10vw]">
+                            <img src={item.imgSrc} alt={item.name} 
+                            className="scale-200 md:scale-100" />
+                        </div>
+                    ))}
+
                 </div>
+                <div ref={stripe2} className="absolute left-[100%] flex gap-28 md:gap-54 ">
+                    {ImageData.map((item) => (
+                        <div key={100 + item.id} className="flex items-center justify-center w-[10vw] h-[10vw]">
+                            <img src={item.imgSrc} alt={item.name} className="scale-200 md:scale-100" />
+                        </div>
+                    ))}
+
+                </div>
+                
+            </div>
         </div>
     );
 }

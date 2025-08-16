@@ -20,15 +20,3 @@ body {
   src: url('../public/Fonts/GeneralSans-Medium.otf');
 }
 
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50.5%);
-  }
-}
-
-.marquee {
-  animation: marquee 6s linear infinite;
-}

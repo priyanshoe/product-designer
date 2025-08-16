@@ -5,10 +5,12 @@ import Page3 from "./Page3";
 
 export default function Home(){
   return(
-    <div>
+    <div className="overflow-hidden">
       <Landing/>
       <Page2/>
-      <Strip/>
+      <div className="relative">
+        <Strip/>
+      </div>
       <Page3/>
     </div>
   )
