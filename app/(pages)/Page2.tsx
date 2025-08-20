@@ -1,4 +1,4 @@
-import Button from "./components/Button"
+import Button from "../components/Button"
 
 export default function Page2(){
     const data = [
@@ -39,7 +39,7 @@ export default function Page2(){
                 ))
             }
             <div className="pt-4 md:pt-12 lg:pt-28">
-                <Button/>
+                <Button name="View all work"/>
             </div>
         </div>
     )

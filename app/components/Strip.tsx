@@ -35,18 +35,19 @@ export default function Strip() {
 
         gsap.to(stripe1.current, {
             x:'-100%',
-            duration: 18,
+            duration: 27,
             repeat: -1,
             ease: 'linear',
         })
         gsap.to(stripe2.current, {
             x:'-100%',
-            duration: 18,
+            duration: 27,
             repeat: -1,
             ease: 'linear',
         })
     }
     return (
+        <div className="relative pb-30 md:pb-65 lg:pb-85 xl:pb-100 2xl:pb-120">
         <div className="stripe_container absolute top-0 left-0 border-[#9c9c9c] border-y-1 ">
             <div className="stripe_slider relative flex whitespace-nowrap py-8 md:py-4 lg:py-2 ">
                 <div ref={stripe1} className="flex gap-28 md:gap-54 ">
@@ -68,6 +69,7 @@ export default function Strip() {
                 </div>
                 
             </div>
+        </div>
         </div>
     );
 }
