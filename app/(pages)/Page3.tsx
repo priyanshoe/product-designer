@@ -4,12 +4,12 @@ import Button from "../components/Button";
 export default function Page3() {
     const image = { name: "Cynthia", src: "./Images/cynthia.webp" };
     return(
-        <div className="relative font-[Regular] w-full h-screen md:h-[70vh] lg:h-screen flex items-start justify-center px-6 pt-12">
+        <div className="relative font-[Regular] w-full h-screen md:h-[70vh]   flex items-start justify-center px-6 pt-12">
             
             <div className="container flex max-sm:flex-col gap-8 lg:gap-15 xl:gap-20 md:pl-24 lg:pl-64 xl:pl-100 2xl:pl-120 xl:pr-25 2xl:pr-50 ">
 
                 <div className="image h-auto w-60 md:w-400 lg:w-400 xl:w-450 2xl:w-300  ">
-                    <img src="./Images/cynthia.webp" alt={image.name} 
+                    <img src={image.src} alt={image.name} 
                     className="w-full h-full object-contain object-top" />
                 </div>
 
@@ -25,9 +25,9 @@ export default function Page3() {
                 
             </div>
 
-            <div className="link absolute uppercase left-4 lg:left-8 top-[90%] md:top-[70%]">
-                <h3 className="text-xs text-[#9c9c9c] font-bold">Oops, almost forgot...</h3>
-                <h2 className="flex gap-2 text-sm">Subscribe to my youtube channel <ArrowUpRight /></h2>
+            <div className="link absolute uppercase left-4 lg:left-13 top-[90%] md:top-[70%]">
+                <h3 className="text-xs lg:text-sm text-[#9c9c9c] font-bold">Oops, almost forgot...</h3>
+                <h2 className="flex gap-2 text-sm lg:text-base md:font-bold">Subscribe to my youtube channel <ArrowUpRight /></h2>
             </div>
         </div>
     )
