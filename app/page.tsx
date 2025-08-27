@@ -16,7 +16,11 @@ export default function Home() {
       requestAnimationFrame(raf);
     }
     requestAnimationFrame(raf);
-  })
+    
+      return () => {
+      lenis.destroy()
+    }
+  },[])
 
   return (
     <div className="overflow-hidden">
