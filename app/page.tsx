@@ -1,15 +1,29 @@
+'use client'
+import Lenis from 'lenis'
 import Strip from "./components/Strip";
 import Landing from "./(pages)/Landing";
 import Page2 from "./(pages)/Page2";
 import Page3 from "./(pages)/Page3";
+import { useEffect } from 'react';
 
-export default function Home(){
-  return(
+export default function Home() {
+
+  useEffect(() => {
+    
+    const lenis = new Lenis();
+    function raf(time: any) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
+  })
+
+  return (
     <div className="overflow-hidden">
-      <Landing/>
-      <Page2/>
-      <Strip/>
-      <Page3/>
+      <Landing />
+      <Page2 />
+      <Strip />
+      <Page3 />
     </div>
   )
 }
