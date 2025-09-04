@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
-*{
-  scroll-behavior: smooth;
+::-webkit-scrollbar {
+  display: none;
 }
 :root {
   --primary-color: #000000;
@@ -28,4 +28,7 @@ body {
 }
 .transitionHideNav{
 	transition: translate 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.transitionHideLinks{
+	transition: translate 0.5s ease;
 }
