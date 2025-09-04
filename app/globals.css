@@ -23,3 +23,9 @@ body {
   src: url('../public/Fonts/GeneralSans-Medium.otf');
 }
 
+.transitionNav{
+	transition: translate 0.8s cubic-bezier(0.65, 0, 0.35, 1);
+}
+.transitionHideNav{
+	transition: translate 1s cubic-bezier(0.65, 0, 0.35, 1);
+}
