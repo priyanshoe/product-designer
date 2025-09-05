@@ -25,7 +25,7 @@ export default function CustomCursor() {
     }, []);
 
     return (
-        <div
+        <div className="max-sm:hidden"
             style={{
                 position: "fixed",
                 top: position.y,
