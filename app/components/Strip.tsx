@@ -48,7 +48,7 @@ export default function Strip() {
     }
     return (
         <div className="relative pb-30 md:pb-65 lg:pb-85 xl:pb-100 2xl:pb-120">
-        <div className="stripe_container absolute top-0 left-0 border-[#9c9c9c] border-y-1 ">
+        <div className="stripe_container absolute top-0 left-0 border-[var(--secondary-color)] border-y-1 ">
             <div className="stripe_slider relative flex whitespace-nowrap py-8 md:py-4 lg:py-2 ">
                 <div ref={stripe1} className="flex gap-28 md:gap-54 ">
                     {ImageData.map((item) => (
