@@ -39,7 +39,7 @@ export default function Customloading() {
 
 
     return (
-        <div className={`absolute top-0 left-0 z-999 w-full h-screen ${loading ? 'translate-y-0' : 'translate-y-[-100%]'} transitionNav bg-[var(--secondary-color)] text-white
+        <div className={`fixed top-0 left-0 z-999 w-full h-screen ${loading ? 'translate-y-0' : 'translate-y-[-100%]'} transitionNav bg-[var(--secondary-color)] text-white
                          flex justify-center items-center `}>
             <div className="flex items-center justify-center gap-3">
                 <h3>Cynthia Ugwu</h3>
