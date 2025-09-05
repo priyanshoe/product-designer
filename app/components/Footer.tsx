@@ -6,10 +6,10 @@ export default function Footer() {
         
         {/* Links (on right for desktop, top for mobile) */}
         <div className=" uppercase text-sm md:text-base border-[#9c9c9c] max-sm:border-b-1 py-6 lg:gap-12  flex flex-wrap justify-between md:justify-end md:gap-6 order-1 md:order-2">
-          <a href="#" >LinkedIn</a>
-          <a href="#" >X/Twitter</a>
-          <a href="#" >Instagram</a>
-          <a href="#" >Youtube</a>
+          <a href="#" className="hoverBottomBorder" >LinkedIn</a>
+          <a href="#" className="hoverBottomBorder" >X/Twitter</a>
+          <a href="#" className="hoverBottomBorder" >Instagram</a>
+          <a href="#" className="hoverBottomBorder" >Youtube</a>
         </div>
 
         {/* 2 Headings (on left for desktop, below links in mobile) */}

@@ -22,10 +22,10 @@ export default function Landing(){
                 .map((props)=>(
                     <Link 
                     href={'/'} key={props.length} 
-                    className="w-70 text-xs md:text-[2.1vw] lg:text-[1.5vw] 2xl:text-[.7vw] flex gap-3 pb-2 ">
+                    className="hoverBottomBorder w-auto text-xs md:text-[2.1vw] lg:text-[1.5vw] 2xl:text-[.7vw] flex gap-3 pb-2 ">
 
                         <h3>{props}</h3>
-                        <ArrowUpRight />
+                        <ArrowUpRight  className="hoverRotate" />
 
                     </Link>
                 ))

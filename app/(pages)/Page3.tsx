@@ -27,7 +27,7 @@ export default function Page3() {
 
             <div className="link absolute uppercase left-4 lg:left-13 top-[90%] md:top-[70%]">
                 <h3 className="text-xs lg:text-sm text-[#9c9c9c] font-bold">Oops, almost forgot...</h3>
-                <h2 className="flex gap-2 text-sm lg:text-base md:font-bold">Subscribe to my youtube channel <ArrowUpRight /></h2>
+                <h2 className="hoverBottomBorder flex gap-2 text-sm lg:text-base md:font-bold">Subscribe to my youtube channel <ArrowUpRight /></h2>
             </div>
         </div>
     )
