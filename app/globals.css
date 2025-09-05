@@ -6,7 +6,7 @@
 :root {
   --primary-color: #000000;
   --primary-text-color: #ffffff;
-  --secondary-color: #2ecc71;
+  --secondary-color: #616161;
   --secondary-text-color: #9c9c9c;
 }
 body {
@@ -31,4 +31,31 @@ body {
 }
 .transitionHideLinks{
 	transition: translate 0.5s ease;
+}
+
+.hoverBottomBorder{
+  position: relative;
+  cursor: pointer;
+}
+.hoverBottomBorder::after{
+  content: "";
+  background-color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top:97%;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.2s ease;
+}
+.hoverBottomBorder:hover::after{
+  transform: scaleX(1);
+}
+
+.hoverRotate{
+  transition: all 0.5s ease;
+}
+.hoverBottomBorder:hover .hoverRotate{
+  transform: rotate(45deg);
 }

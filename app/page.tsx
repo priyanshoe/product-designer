@@ -5,6 +5,8 @@ import Landing from "./(pages)/Landing";
 import Page2 from "./(pages)/Page2";
 import Page3 from "./(pages)/Page3";
 import { useEffect } from 'react';
+import Customloading from './components/Customloading';
+import CustomCursor from './components/CustomCursor';
 
 export default function Home() {
 
@@ -23,7 +25,9 @@ export default function Home() {
   },[])
 
   return (
-    <div className="overflow-hidden">
+    <div className="relative overflow-hidden">
+      <Customloading/>
+      <CustomCursor/>
       <Landing />
       <Page2 />
       <Strip />

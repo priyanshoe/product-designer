@@ -68,9 +68,9 @@ export default function NavBar() {
 
                 <div className="nav-links relative overflow-hidden sm:w-2/6 lg:w-2/7 xl:w-2/9 2xl:w-2/10  ">
                     <ul className="max-sm:hidden uppercase text-[1.8vw] lg:text-[1.5vw] lg:pr-2 xl:text-[1.1vw] xl:pr-4 2xl:text-[.8vw] absolute left-0 top-0 flex justify-between items-center gap-4 h-full w-full">
-                        <li>Work</li>
-                        <li>Playground</li>
-                        <li>Contact</li>
+                        <li className="hoverBottomBorder">Work</li>
+                        <li className="hoverBottomBorder">Playground</li>
+                        <li className="hoverBottomBorder">Contact</li>
                     </ul>
                     <button 
                         onClick={()=> setFullNav(true)}
